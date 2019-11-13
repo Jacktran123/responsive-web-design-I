@@ -1,3 +1,168 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS code starts here */
+body{
+    background: black;
+}
+
+.container{
+    width: 880px;
+    margin: 0px auto 20px auto;
+    height: 100%;
+    background: white;
+}
+
+nav ul{
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+
+}
+
+nav ul li {
+    padding-top: 20px;
+	color: gray;
+	font-size: 20px;
+	display: inline-block;
+	
+}
+
+header {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin: 40px;
+    
+    
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 100px;
+
+}
+header div h1{
+    font-size: 50px;
+}
+.button{
+    width: 135px;
+    box-sizing: border-box;
+    padding: 10px 26px;
+    margin-top: 30px;
+    border: 2px solid black;
+    
+}
+hr{
+    width: 810px;
+    margin-top: 50px;
+}
+section {
+    display: flex;
+    width: 810px;
+    flex-direction: row;
+    margin: 20px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+section div{
+    
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   
+}
+section div .h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+section .section-middle{
+    display: flex;
+
+}
+div .h2{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+div .section-middle{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+div .services{
+    width: 28%;
+}
+
+
+
+
+.contact{
+    margin: 20px ;
+    margin-left: 30px;
+
+}
+.contact p{
+    margin: 10px 10px 10px 0;
+}
+footer{
+	width: 100%;
+	height: 30px;
+}
+footer p{
+	text-align: center;
+} 
