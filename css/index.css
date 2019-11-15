@@ -49,41 +49,55 @@ table {
 	border-spacing: 0;
 }
 /* CSS code starts here */
+
+
+
 body{
-    background: black;
+    background:white;
 }
 
 .container{
-    width: 880px;
+    width: 818px;
     margin: 0px auto 20px auto;
     height: 100%;
     background: white;
 }
-
-nav ul{
-    display: flex;
-    margin: 0px auto;
-    justify-content: space-around;
-    align-items: center;
-    background: white;
+.nav-container{
+	width: 100%;
+	display: flex;
+	padding-top: 20px;
+	justify-content: space-between;
+	align-items: center;
 
 }
-
-nav ul li {
-    padding-top: 20px;
+nav{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+nav a{
+    /* padding-top: 20px; */
 	color: gray;
 	font-size: 20px;
-	display: inline-block;
+	text-decoration: none;
+	
 	
 }
 
+.header{
+	display: flex;
+	align-items: baseline;
+	align-items: center;
+	
+}
+.header .logo{
+	padding-top: 20px;
+}
 header {
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-between;
-    margin: 40px;
-    
-    
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
 }
 header div{
     display: flex;
@@ -91,7 +105,7 @@ header div{
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-left: 100px;
+    margin-left: 50px;
 
 }
 header div h1{
@@ -106,22 +120,25 @@ header div h1{
     
 }
 hr{
-    width: 810px;
+    width: 100%;
     margin-top: 50px;
 }
 section {
     display: flex;
-    width: 810px;
+    width: 100%;
     flex-direction: row;
     margin: 20px auto;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-    
 }
-section div{
+.mid-image{
+	background-image: url(/img/mid-page-accent.jpg);
+	width: 100%;
+	height: 150px;
+}
+section div {
     
-    width: 400px;
+    width: 313px;
     padding-top: 15px;
     padding-bottom: 15px;
    
@@ -134,6 +151,7 @@ section .section-middle{
     display: flex;
 
 }
+
 div .h2{
     font-weight: bold;
     margin-bottom: 15px;
@@ -166,3 +184,62 @@ footer{
 footer p{
 	text-align: center;
 } 
+
+@media screen and (max-width: 800px){
+	
+	.header-img{
+		display:none;
+	}
+	header{
+		justify-content: center;
+	}
+	div .nav-container{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		
+	}
+	.container{
+		width: 100%;
+	}
+	section div {
+    
+		width: 50%x;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	} 
+}	
+
+@media screen and (max-width: 500px){
+	.nav-container nav{
+		flex-direction: column;
+		width: 100%;
+
+	}
+
+	.nav-container nav a {
+		border-bottom: 1px solid black;
+		padding: 15px;
+		text-align: center;
+	}
+	
+	.nav-container nav a:first-child {
+		border-top: 1px solid black;
+	}
+	section div{
+    
+		width: 100%;
+		margin: 15px 10px;
+	}
+	.section-middle{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	div .services{
+		width: 100%;
+		margin: 20px 10px;
+	}
+	
+
+}
